@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta http-equiv="content-type"
+          content="text/html;
+          charset=UTF-8">
+    <title>  </title>
+    <style>
+        #container {
+        }
+    </style>
+</head>
+    <body>
+        Bedrag per stuk: <input type="number" name="bedrag" id="bedrag" value="12.95"><br>
+        Aantal: <input type="number" name="Aantal" id="aantal" value="3"><br>
+        <button onclick="myFunction()">Click me</button>
+        <div id="container"></div>
+        <script>
+            function myFunction() {
+                var bedrag = document.getElementById("bedrag").value;
+                
+                var aantal = document.getElementById("aantal").value;
+                
+                var kosten = parseFloat(bedrag * aantal).toFixed(2);
+                
+                document.getElementById("container").innerHTML = "Het totaalbedrag is " + "<b>" + kosten;
+            }
+            
+        </script>
+    </body>
+</html>
