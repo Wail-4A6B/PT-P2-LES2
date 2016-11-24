@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta http-equiv="content-type"
+          content="text/html;
+          charset=UTF-8">
+    <title>  </title>
+    <style>
+        #container {
+            background-color: green;
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+    <body>
+        Breedte: <input type="number" name="breedte" id="breedte" value="250"><br>
+        Hoogte: <input type="number" name="hoogte" id="hoogte" value="150"><br>
+        <button onclick="myFunction()">Click me</button>
+        <div id="container"></div>
+        <script>
+            function myFunction() {
+                var breedte = document.getElementById("breedte").value;
+                
+                var hoogte = document.getElementById("hoogte").value;
+                
+                var container = document.getElementById("container");
+                
+                container.style.width = breedte + "px";
+                
+                container.style.height = hoogte + "px";
+            }
+            
+        </script>
+    </body>
+</html>
